@@ -22,9 +22,16 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-04-15T12:10:45.641Z",
-    "modified": "2023-04-15T12:10:45.641Z",
+    "modified": "2023-04-15T14:05:16.990Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "images,price",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
     "tests": []
   },
   {
@@ -155,6 +162,126 @@
       {
         "name": "sort",
         "value": "price,-ratingsAverage",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "668ffff5-48ff-4660-9e7a-af3a4dd32ad8",
+    "colId": "history",
+    "containerId": "",
+    "name": "127.0.0.1:3000/api/v1/tours?fileds=name,price,rating",
+    "url": "127.0.0.1:3000/api/v1/tours?fileds=name,price,rating",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-15T12:28:59.880Z",
+    "modified": "2023-04-15T12:28:59.880Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fileds",
+        "value": "name,price,rating",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "ed047571-bff6-4322-b98f-bf2e1e75724e",
+    "colId": "history",
+    "containerId": "",
+    "name": "127.0.0.1:3000/api/v1/tours?fields=name,price,rating",
+    "url": "127.0.0.1:3000/api/v1/tours?fields=name,price,rating",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-15T12:29:52.159Z",
+    "modified": "2023-04-15T12:29:52.159Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "name,price,rating",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "7eab458c-ff80-4964-8ef6-19048a341e10",
+    "colId": "history",
+    "containerId": "",
+    "name": "127.0.0.1:3000/api/v1/tours?fields=name",
+    "url": "127.0.0.1:3000/api/v1/tours?fields=name",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-15T12:30:33.022Z",
+    "modified": "2023-04-15T12:30:33.022Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "name",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "62ee0635-4257-4460-adfa-1fe51b094872",
+    "colId": "history",
+    "containerId": "",
+    "name": "127.0.0.1:3000/api/v1/tours?field=images",
+    "url": "127.0.0.1:3000/api/v1/tours?field=images",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-15T12:44:28.022Z",
+    "modified": "2023-04-15T12:44:28.022Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "field",
+        "value": "images",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "6add541d-dd95-4865-84f7-5cbf5762e4a3",
+    "colId": "history",
+    "containerId": "",
+    "name": "127.0.0.1:3000/api/v1/tours?fields=images",
+    "url": "127.0.0.1:3000/api/v1/tours?fields=images",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-15T12:44:42.550Z",
+    "modified": "2023-04-15T12:44:42.550Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "images",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "ce15b1cb-9ec4-4df1-a987-10a34ce00492",
+    "colId": "history",
+    "containerId": "",
+    "name": "127.0.0.1:3000/api/v1/tours?fields=images,price",
+    "url": "127.0.0.1:3000/api/v1/tours?fields=images,price",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-15T14:04:18.040Z",
+    "modified": "2023-04-15T14:04:18.040Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "images,price",
         "isPath": false
       }
     ],
