@@ -10,8 +10,6 @@ const db = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 
-console.log('local ==>', process.env.DATABASE_LOCAL);
-
 mongoose
   // .connect(db, {
   .connect(process.env.DATABASE_LOCAL, {
