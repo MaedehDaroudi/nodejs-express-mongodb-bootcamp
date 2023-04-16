@@ -1,6 +1,13 @@
 // const fs = require('fs');
 const Tour = require('./../models/toursModels');
 
+exports.aliasTours = (req, res, next) => {
+  req.query.limit = 5;
+  req.query.sort = 'price,-ratingsAverage';
+  req.query.fields = 'name,price,ratingsAverage,summary,difficulty';
+  next();
+};
+
 exports.getAllTours = async (req, res) => {
   try {
     const queryObj = { ...req.query };
@@ -34,7 +41,6 @@ exports.getAllTours = async (req, res) => {
       console.log('numTour: ', numTour);
       console.log('skip: ', skip);
       if (skip > numTour) {
-        console.log("1111111111111111")
         throw new Error('this page not exist');
       }
     }
