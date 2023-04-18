@@ -5,6 +5,10 @@ const router = express.Router();
 
 // router.param('id', tourController.checkID);
 
+router.route('/tour-Stas').get(tourController.getTourStas);
+
+router.route('/monthly-plan/:year').get(tourController.getMonthlyPlan);
+
 router
   .route('/top-5-cheap')
   .get(tourController.aliasTours, tourController.getAllTours);
